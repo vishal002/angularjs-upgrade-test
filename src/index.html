@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>AngularjsUpgradeTest</title>
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!--<link rel="icon" type="image/x-icon" href="favicon.ico">-->
+
+  <!--<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">-->
+
+  <!-- mengagedist -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="mengagedist/dist/style.css">
+  <link rel="fav icon" type="image/png"
+        href="https://s3-ap-southeast-1.amazonaws.com/mobikon/resources/images/favicons/square-favicon.png">
+  <script type="application/javascript">
+    var mk = window.mk || {};
+    mk.origConfig = {isHybrid: false};
+  </script>
+  <script src="mengagedist/dist/load.js"></script>
+  <!--<script src="mengagedist/dist/vector.js"></script>-->
+  <script>
+    // mk.load.configs({hasAppId: false, env: "beta", cdnPath: ''});
+    mk.load.modernizr();
+    mk.load.googleFonts();
+    mk.load.googleAnalytics();
+    mk.load.googlePlaces();
+    mk.load.cordova();
+    mk.load.fbAsyncInit();
+  </script>
+  <script src="mengagedist/dist/bundle.js"></script>
+  <script src="mengagedist/other/facebook_jssdk_script.js"></script>
+  <script src="https://snippets.freshchat.com/js/fc-pre-chat-form.js"></script>
+  <script src="mengagedist/other/freshchat_config_script.js"></script>
+  <!-- mengagedist -->
+
+</head>
+<body>
+    <app-root></app-root>
+</body>
+</html>

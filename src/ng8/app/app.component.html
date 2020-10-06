@@ -1,0 +1,27 @@
+
+<!-- Toolbar -->
+<div class="toolbar" role="banner">
+  <img style="height: 65px; padding: 15px;"
+    src="https://s3-ap-southeast-1.amazonaws.com/mobikon/resources/images/square-icon.png" />
+  <span>Angular Js is running inside Angular 8</span>
+  <a href="#/auth/login" class="button_menu">Login to Engage</a>
+  <a routerLink="/newpage" routerLinkActive="active" class="button_menu">New Page</a>
+  <div class="spacer"></div>
+</div>
+
+<div class="ng8-content" role="main">
+    <!-- mengagedist -->
+    <div class="view-container">
+      <div class="progress app-progress">
+        <div class="progress-value determinate"></div>
+      </div>
+      <div ng-if="dataLoader">
+        <div mk-load="dataLoader">
+          <div ui-view></div>
+        </div>
+      </div>
+    </div>
+    <!-- mengagedist -->
+</div>
+
+<router-outlet></router-outlet>

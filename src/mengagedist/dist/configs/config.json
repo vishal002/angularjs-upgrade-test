@@ -1,0 +1,361 @@
+{
+  "importConfigs": [
+    "mengagedist/dist/lib/mobikon/configs/config.json"
+  ],
+  "app": {
+    "id": "mengage",
+    "name": "mobikon",
+    "build": "3.27.19.0"
+  },
+  "data": {
+    "isOData": true,
+    "cache": "revert",
+    "odataFeedback": true
+  },
+  "images": {
+    "root": "https://s3-ap-southeast-1.amazonaws.com/mobikon/",
+    "editorResources": "https://s3-ap-southeast-1.amazonaws.com/mobikon-editor-resources/"
+  },
+  "feedback": {
+    "preview": "https://beta-apps.skayle.com/mfeedback-preview/master",
+    "urlDomain": "mfb.ac"
+  },
+  "notifications": {
+    "gcmSenderId": "588889604250"
+  },
+  "cleverTap": {
+    "accountId": "65W-799-984Z"
+  },
+  "mixpanel": {
+    "token": "b4ed401c0c4452d6545902ef4ab9db3b"
+  },
+  "googleAnalytics": {
+    "account": "UA-50646356-1"
+  },
+  "googleMaps": {
+    "key": "AIzaSyCcmd9_ZY2KsvJIUmiV4Axbwlubd04zBVw"
+  },
+  "partners": {
+    "zomato": {
+      "id": "7FD40DCC-9915-4637-B09C-F74ED560067E"
+    }
+  },
+  "servers": {
+    "play": "https://server.mobikontech.com",
+    "playSocket": "wss://server.mobikontech.com"
+  },
+  "qrcode": {
+    "api": "http://api.qrserver.com/v1/create-qr-code/"
+  },
+  "creditPackages": {
+    "INR": [
+      {
+        "packageName": "Package 1",
+        "packageAmount": 1000,
+        "numberOfCredits": 4000
+      },
+      {
+        "packageName": "Package 2",
+        "packageAmount": 3500,
+        "numberOfCredits": 16000,
+        "savedAmount": 500
+      },
+      {
+        "packageName": "Package 3",
+        "packageAmount": 6000,
+        "numberOfCredits": 34000,
+        "savedAmount": 2500
+      },
+      {
+        "packageName": "Package 4",
+        "packageAmount": 16000,
+        "numberOfCredits": 100000,
+        "savedAmount": 9000
+      },
+      {
+        "packageName": "Package 5",
+        "packageAmount": 29000,
+        "numberOfCredits": 200000,
+        "savedAmount": 21000
+      }
+    ],
+    "USD": [
+      {
+        "packageName": "Package 1",
+        "packageAmount": 15,
+        "numberOfCredits": 4000
+      },
+      {
+        "packageName": "Package 2",
+        "packageAmount": 60,
+        "numberOfCredits": 16000
+      },
+      {
+        "packageName": "Package 3",
+        "packageAmount": 100,
+        "numberOfCredits": 34000,
+        "savedAmount": 27.50
+      },
+      {
+        "packageName": "Package 4",
+        "packageAmount": 250,
+        "numberOfCredits": 100000,
+        "savedAmount": 125
+      },
+      {
+        "packageName": "Package 5",
+        "packageAmount": 400,
+        "numberOfCredits": 200000,
+        "savedAmount": 350
+      }
+    ],
+    "MYR": [
+      {
+        "packageName": "Package 1",
+        "packageAmount": 29,
+        "numberOfCredits": 10000
+      },
+      {
+        "packageName": "Package 2",
+        "packageAmount": 60,
+        "numberOfCredits": 25000
+      },
+      {
+        "packageName": "Package 3",
+        "packageAmount": 113,
+        "numberOfCredits": 50000
+      },
+      {
+        "packageName": "Package 4",
+        "packageAmount": 203,
+        "numberOfCredits": 100000
+      },
+      {
+        "packageName": "Package 5",
+        "packageAmount": 382,
+        "numberOfCredits": 200000
+      },
+      {
+        "packageName": "Package 6",
+        "packageAmount": 836,
+        "numberOfCredits": 500000
+      },
+      {
+        "packageName": "Package 7",
+        "packageAmount": 1553,
+        "numberOfCredits": 1000000
+      }
+    ],
+    "PHP": [
+      {
+        "packageName": "Package 1",
+        "packageAmount": 10,
+        "numberOfCredits": 10000
+      },
+      {
+        "packageName": "Package 2",
+        "packageAmount": 23,
+        "numberOfCredits": 25000
+      },
+      {
+        "packageName": "Package 3",
+        "packageAmount": 45,
+        "numberOfCredits": 50000
+      },
+      {
+        "packageName": "Package 4",
+        "packageAmount": 85,
+        "numberOfCredits": 100000
+      },
+      {
+        "packageName": "Package 5",
+        "packageAmount": 150,
+        "numberOfCredits": 200000
+      },
+      {
+        "packageName": "Package 6",
+        "packageAmount": 319,
+        "numberOfCredits": 500000
+      },
+      {
+        "packageName": "Package 7",
+        "packageAmount": 620,
+        "numberOfCredits": 1000000
+      }
+    ]
+  },
+  "tax": {
+    "serviceTax": {
+      "name": "CGST",
+      "taxPercentage": 9
+    },
+    "swachBharatCess": {
+      "name": "SGST",
+      "taxPercentage": 9
+    }
+  },
+  "payment": {
+    "paypal": {
+      "account": "spadmin@mobikontech.com",
+      "locality": "SG",
+      "currency": "USD",
+      "itemName": "mEngage",
+      "successUrl": "#/settings/billing-credits/payment-confirm",
+      "cancelUrl": "#/settings/billing-credits/list/purchase-history"
+    },
+    "payUMoney": {
+      "notifyUrl": "https://server.mobikontech.com/payment/pay-u-money/pay",
+      "successUrl": "#/settings/billing-credits/list/purchase-history",
+      "confirmUrl": "https://server.mobikontech.com/payment/pay-u-money/payment-confirm",
+      "cancelUrl": "#/settings/billing-credits/list/purchase-history"
+    }
+  },
+  "contact": {
+    "phone": [
+      "+65 91272972",
+      "+91 22 61054525"
+    ],
+    "email": "hello@skayle.com"
+  },
+  "entityConfig": false,
+  "feedbackConfig": false,
+  "reservationConfig": false,
+  "loyaltyConfig": false,
+  "mwebConfig": false,
+  "reviewsConfig" : false,
+  "launchCampaigns": true,
+  "advancedReport": false,
+  "smartCampaignConfig": false,
+  "v4Redemptions": false,
+  "instantReportConfig": false,
+  "accountPaginationSize": 200,
+  "marketPlace": {
+    "vendors": {
+      "truce": {
+        "name": "truce",
+        "display": "Get veggies",
+        "url": "http://getveggies.mobikontech.com/",
+        "tagline": "Food Procurement, simplified",
+        "description": "Buy your essential vegetables online with Truce. Truce stands for 'True Pricing', from farm to your fridge. No middle men, more profit.",
+        "emails": "kedar@truce.in, saurabh@truce.in",
+        "cc": "sanket@skayle.com, samir@skayle.com, amit@skayle.com",
+        "category": "Veggies"
+      }
+    }
+  },
+  "country": {
+    "India": 1
+  },
+  "menuUpload": "https://getkonekt.com/UploadCSVMenu/api/csv/Upload",
+  "mbServer": "https://massblurb.skayle.com/",
+  "gcpServer": "https://gcp-api.herokuapp.com",
+  "billingAndCreditsServer": "https://billing.skayle.com/v1",
+  "mWebServers": {
+    "previewLink": "https://preview.skayle.com/"
+  },
+  "social": {
+    "facebook": "https://www.facebook.com/",
+    "zomato": "https://www.zomato.com/"
+  },
+  "loyalty":{
+    "apiKey": "14495619-0055-4060-A758-1D095F0A7A98",
+    "apiVer": "/api/v2.2/"
+  },
+  "frequency":{
+    "zomato": 720,
+    "tripAdvisor": 720,
+    "google": 60,
+    "facebook": 15,
+    "twitter": 60
+  },
+  "socialApps": {
+    "facebook": {
+      "appId": "669674006449646"
+    }
+  },
+  "cms": {
+    "spaceName": "Production",
+    "spaceId": "9ea1jdg8php9",
+    "contentTypeId": "mengage",
+    "contentDeliveryAccessToken": "XVjFoATEnaRdRSthfqpb-2dtbPAUeT2ZwwX6bvgEV8A"
+  },
+  "activity": {
+    "customer": "customerListExported",
+    "campaigns": {
+      "ongoing": {
+        "automated": "automatedCampaignsListExported",
+        "social": "socialCampaignsListExported"
+      },
+      "scheduled": {
+        "custom": "scheduledCustomCampaignsListExported"
+      },
+      "draft": {
+        "custom": "draftCustomCampaignsListExported",
+        "automated": "draftAutomatedCampaignsListExported",
+        "social": "draftSocialCampaignsListExported"
+      },
+      "completed": {
+        "custom": "completedCustomCampaignsListExported",
+        "automated": "completedAutomatedCampaignsListExported",
+        "social": "completedSocialCampaignsListExported"
+      },
+      "enable": "ongoingAutomatedCampaignEnable",
+      "disable": "ongoingAutomatedCampaignDisable"
+    },
+    "redemptions": "redemptionsListExported",
+    "loyalty": {
+      "members": "loyaltyMemberListExported",
+      "transactions": "loyaltyTransactionsListExported"
+    },
+    "logout": "logout",
+    "user": {
+      "enable": "userEnable",
+      "disable": "userDisable"
+    },
+    "campaignCreated": {
+      "birthday": "birthdayCampaignCreated",
+      "anniversary": "anniversaryCampaignCreated",
+      "apology": "apologyCampaignCreated",
+      "visit": "visitCampaignCreated",
+      "thankyou": "thankyouCampaignCreated",
+      "raf": "rafCampaignCreated",
+      "missyou": "missyouCampaignCreated",
+      "custom": "customCampaignCreated",
+      "profilebuilder": "profilebuilderCampaignCreated",
+      "adhoc": "customCampaignCreated"
+    }
+  },
+  "activityKeyName": {
+    "userEnable": "User Enabled",
+    "userDisable": "User Disabled",
+    "birthdayCampaignCreated": "Birthday Campaign Created",
+    "anniversaryCampaignCreated": "Anniversary Campaign Created",
+    "apologyCampaignCreated": "Apology Campaign Created",
+    "visitCampaignCreated": "Visit Campaign Created",
+    "thankyouCampaignCreated": "Thank You Campaign Created",
+    "rafCampaignCreated": "Refer a Friend Campaign Created",
+    "missyouCampaignCreated": "Miss You Campaign Created",
+    "customCampaignCreated": "Custom Campaign Created",
+    "profilebuilderCampaignCreated": "Profile Builder Campaign Created",
+    "customerListExported": "Customer List Exported",
+    "automatedCampaignsListExported": "Automated Campaign List Exported",
+    "socialCampaignsListExported": "Social Campaign List Exported",
+    "scheduledCustomCampaignsListExported": "Scheduled Custom Campaign List Exported",
+    "draftCustomCampaignsListExported": "Draft Custom Campaign List Exported",
+    "draftAutomatedCampaignsListExported": "Draft Automated Campaign List Exported",
+    "draftSocialCampaignsListExported": "Draft Social Campaign List Exported",
+    "completedCustomCampaignsListExported": "Completed Custom Campaign List Exported",
+    "completedAutomatedCampaignsListExported": "Completed Automated Campaign List Exported",
+    "completedSocialCampaignsListExported": "Completed Social Campaign List Exported",
+    "redemptionsListExported": "Redemption List Exported",
+    "loyaltyMemberListExported": "Loyalty Member List Exported",
+    "loyaltyTransactionsListExported": "Loyalty Transaction List Exported",
+    "login": "Login",
+    "logout": "Logout",
+    "createNewLoyaltyProgram": "Created New Loyalty Program",
+    "updatedLoyaltyProgram": "Updated Loyalty Program",
+    "ongoingAutomatedCampaignEnable": "Ongoing Automated Campaign Enabled",
+    "ongoingAutomatedCampaignDisable": "Ongoing Automated Campaign Disabled"
+  },
+  "lableMappingForCampaginsInSpendDetailsSummary": {"adhoc":"Custom Campaign","thank_you":"Frequency builder : Thank You","information":"Information Campaign","birthday":"Birthday","repeat_customer":"Repeat Customer","anniversary":"Anniversary","triggered":"Automated Campaign","reminder":"Reminder","apology":"Frequency builder : Apology","miss_you":"Miss you","reservation":"Reservation","refer_a_friend":"Refer a friend","birthday_anniversary_reminder":"Birthday Anniversary Reminder","profile_builder":"Profile Builder","frequency_builder_reminder":"Frequency Builder Reminder","refer_a_friend_reminder":"Refer a Friend Reminder","visit":"First Visit","offer":"Offer Campaign","feedback_social":"Feedback Social","profile_builder_update":"Profile Builder Update","event":"Event","":"General Campaign"}
+}

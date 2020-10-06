@@ -1,0 +1,79 @@
+{
+  "importConfigs": ["mengagedist/dist/configs/config.json"],
+  "images": {
+    "root": "https://s3-ap-southeast-1.amazonaws.com/beta-mobikon/",
+    "editorResources": "https://s3-ap-southeast-1.amazonaws.com/mobikon-editor-resources/"
+  },
+  "feedback": {
+    "preview": "https://beta-apps.skayle.com/mfeedback-preview/2.3.1",
+    "urlDomain": "beta.mfb.ac"
+  },
+  "partners": {
+    "zomato": {"id": "A52AB8AF-6478-47D0-A13A-BB673F86FE40"}
+  },
+  "cleverTap": {
+    "accountId": "TEST-75W-799-984Z"
+  },
+  "googleMaps": {
+    "key": "AIzaSyBUW9KduIUZsOw1jClKlVjvsd5A8hawnys"
+  },
+  "servers": {
+    "play": "https://server-beta.mobikontech.com",
+    "playSocket": "wss://server-beta.mobikontech.com"
+  },
+  "userManagement": {
+    "managerRoleId": "manager"
+  },
+  "mixpanel": {
+    "token": "85b1ce43d81de6aefb3b909408895f9a"
+  },
+  "payment": {
+    "paypal": {
+      "account": "spadmin-facilitator_api1.mobikontech.com",
+      "locality": "SG",
+      "sandbox": true,
+      "currency": "USD",
+      "itemName": "mEngage",
+      "successUrl": "#/settings/billing-credits/payment-confirm",
+      "cancelUrl": "#/settings/billing-credits/list/purchase-history"
+    },
+    "payUMoney": {
+      "sandbox": false,
+      "notifyUrl": "http://server-beta.mobikontech.com/payment/pay-u-money/pay",
+      "successUrl": "#/settings/billing-credits/list/purchase-history",
+      "confirmUrl": "http://server-beta.mobikontech.com/payment/pay-u-money/payment-confirm",
+      "cancelUrl": "#/settings/billing-credits/list/purchase-history"
+    }
+  },
+  "marketPlace": {
+    "vendors": {
+      "truce": {
+        "emails": "vivek@skayle.com, deepti.s@skayle.com, siddhi.pore@skayle.com",
+        "cc": ""
+      }
+    }
+  },
+  "mWebServers": {
+    "local": "http://localhost:8000/",
+    "previewLink": "https://preview-beta.skayle.com/"
+  },
+  "loyalty":{
+    "apiKey": "2860259A-D82C-4E62-A6E1-D8EBDE5A6143",
+    "apiVer": "/api/v2.2/"
+  },
+  "menuUpload": "https://beta.mobikontech.com/UploadCSVMenu/api/csv/Upload",
+  "mbServer": "https://massblurb-beta.skayle.com/",
+  "gcpServer": "https://gcp-neo-gp.herokuapp.com",
+  "billingAndCreditsServer": "https://billing.skaylebeta.com/beta",
+  "socialApps": {
+    "facebook": {
+      "appId": "196991087649184"
+    }
+  },
+  "cms": {
+    "spaceName": "Beta",
+    "spaceId": "esbepi20tfnm",
+    "contentTypeId": "mengage-beta",
+    "contentDeliveryAccessToken": "7Xbm0ZcTlXVxeIJuQ8tQ31jV4f0kq5Sm2QNsky0HI5o"
+  }
+}
